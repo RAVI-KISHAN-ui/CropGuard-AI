@@ -1,5 +1,5 @@
 // ===== CONFIG =====
-const API_URL = "http://127.0.0.1:8000/predict";
+const CHAT_API_URL = "http://127.0.0.1:8000/chat";
 
 // ===== PAGE SWITCHING =====
 function showPage(pageName) {
@@ -152,7 +152,7 @@ function capturePhoto() {
 // ===== CHATBOT (connects to backend /chat -> OpenRouter) =====
 const chatWindow = document.getElementById("chatWindow");
 const chatInput = document.getElementById("chatInput");
-const CHAT_API_URL = "http://127.0.0.1:8000/chat";
+const CHAT_API_URL = "https://cropguard-backend-g1nm.onrender.com/chat";
 
 function addBubble(text, sender) {
   const bubble = document.createElement("div");
